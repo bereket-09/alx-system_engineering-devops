@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configures nginx to run and listen to port 80
-sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
-service nginx restart
-echo "" > /run/nginx.pid
+# same as task 0 but -f added to ln to forcefully remove the file if it exists
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
+rm /run/nginx.pid
