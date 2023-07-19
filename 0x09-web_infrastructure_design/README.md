@@ -1,14 +1,9 @@
-# Web Infrastructure Design
+# Web infrastructure design
 
-## Description
+This was a week-long project in which I began to research web infrastructure
+design. As I conducted research on different design principles, I
+whiteboarded diagrams of a developing web infrastructure. I started with a
+simple LAMP model and ended with a fully distributed, monitored, and secured
+system.
 
-This project is a collection of web infrastructure designs that could be implemented in any web development project.
-
-## Whiteboarding each task
-
-+ Simple web stack - [details](0-simple_web_stack.md)
-+ Distributed web infrastructure - [details](1-distributed_web_infrastructure.md)
-+ Secured and monitored web infrastrucure - [details](2-secured_and_monitored_web_infrastructure.md)
-+ Scaled up web infrastructure - [details](3-scale_up.md)
-# Web Infrastructure Design
-![](https://onesystemstech.com/wp-content/uploads/2022/03/One-Systems-Technologies-Wireless-Network-Infrastructure-illustration.jpg)
+Files in this project contain links to each respective whiteboard diagram.

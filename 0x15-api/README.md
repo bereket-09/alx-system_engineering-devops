@@ -1,4 +1,21 @@
-# `API`
-![](https://www.howtogeek.com/wp-content/uploads/2018/03/api-defined-as-application-program-interface.jpeg?height=200p&trim=2,2,2,2)
-# Here's an illustration to help you understand API's
-![](https://www.manutan.com/blog/medias/file_bank/Images/2019/12_D%C3%A9cembre/thumbs/863_Infographie-API-restaurant-EN-800-100.jpg)
+# 0x15. API
+
+All along, we have been writing shell scripts for cross-platform communication. In this project, I am introduced to <b>Application Programming Interfaces</b> which is simply a <i>software intermediary that allows two applications to talk to each other though defined interfaces.</i>
+
+
+Concepts learnt:
+- What Bash scripting should not be used for
+- What is an API
+- What is a REST API
+- What are microservices
+- What is the CSV format
+- What is the JSON format
+- Pythonic Package and module name style
+- Pythonic Class name style
+- Pythonic Variable name style
+- Pythonic Function name style
+- Pythonic Constant name style
+- Significance of CapWords or CamelCase in Python
+
+
+This directory contains python script I wrote with this [REST API](https://jsonplaceholder.typicode.com/)
