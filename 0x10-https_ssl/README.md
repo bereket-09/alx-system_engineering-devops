@@ -1,6 +1,7 @@
-# 0x10-https_ssl
+# `HTTPS SSL`
 
-Concepts learnt:
-- What is HTTPS SSL 2 main roles
-- What is the purpose encrypting traffic
-- What SSL termination means
+![](https://www.panamacitywebsitedesign.net/uploads/ARM_Blog-why-you-need-an-ssl-certificate.png)
+
+# `How it Works`
+
+![](https://eadn-wc02-3995256.nxedge.io/cdn/wp-content/uploads/2018/07/SSL.png)

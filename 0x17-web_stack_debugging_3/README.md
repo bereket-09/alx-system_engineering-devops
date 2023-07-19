@@ -1,3 +1,3 @@
-# 0x17. Web stack debugging #3
-This was the fourth project in a series of web stack debugging projects. In these projects, I was given broken/bugged webstacks in isolated containers, and asked to fix them to a working state. For each task, I wrote a script automating the commands necessary to fix the
-web stack.
+# `Web stack debugging #3`
+
+![](https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/4/3/43400e080d13e5cba4e4c37c74b983314a3b72a36ea0339a032cdcf417037908/debugging-process-mc-slide2.png)
