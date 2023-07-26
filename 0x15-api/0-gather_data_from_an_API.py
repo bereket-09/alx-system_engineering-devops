@@ -1,22 +1,29 @@
 #!/usr/bin/python3
 """
 <<<<<<< HEAD
+<<<<<<< HEAD
 A Script that, uses this REST API, for a given employee ID, returns
 information about his/her TODO list progress
 """
 
 import json
 =======
+=======
+>>>>>>> parent of d59d8ae... Update 0-gather_data_from_an_API.py
 Using https://jsonplaceholder.typicode.com
 returns info about employee TODO progress
 Implemented using recursion
 """
 import re
+<<<<<<< HEAD
+>>>>>>> parent of d59d8ae... Update 0-gather_data_from_an_API.py
+=======
 >>>>>>> parent of d59d8ae... Update 0-gather_data_from_an_API.py
 import requests
 from sys import argv
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 if __name__ == "__main__":
 
@@ -45,6 +52,8 @@ if __name__ == "__main__":
         if done_tasks['completed']:
             print("\t " + done_tasks.get('title'))
 =======
+=======
+>>>>>>> parent of d59d8ae... Update 0-gather_data_from_an_API.py
 
 API = "https://jsonplaceholder.typicode.com"
 """REST API url"""
@@ -68,4 +77,7 @@ if __name__ == '__main__':
             )
             for todo_done in todos_done:
                 print('\t {}'.format(todo_done.get('title')))
+<<<<<<< HEAD
+>>>>>>> parent of d59d8ae... Update 0-gather_data_from_an_API.py
+=======
 >>>>>>> parent of d59d8ae... Update 0-gather_data_from_an_API.py
