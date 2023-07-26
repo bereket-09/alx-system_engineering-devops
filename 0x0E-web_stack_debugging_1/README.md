@@ -1,2 +1,6 @@
-# `Web stack debugging 1`
-![](https://cdn.educba.com/academy/wp-content/uploads/2019/09/What-is-Debugging.png)
+#  Web stack debugging #1
+
+
+###  Tasks
+0. Nginx likes port 80 
+1. Make it sweet and short 

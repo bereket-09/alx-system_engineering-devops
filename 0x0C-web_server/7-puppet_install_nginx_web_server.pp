@@ -1,21 +1,26 @@
-# Automating project requirements using Puppet
+# This manifest installs ngix and adds redirect page
 
-package { 'nginx':
-  ensure => installed,
+package {'nginx':
+  ensure => present,
+  name   => 'nginx',
 }
 
-file_line { 'install':
-  ensure => 'present',
-  path   => '/etc/nginx/sites-enabled/default',
-  after  => 'listen 80 default_server;',
-  line   => 'rewrite ^/redirect_me https://www.github.com/besthor permanent;',
-}
-
-file { '/var/www/html/index.html':
+file {'/var/www/html/index.html':
+  ensure  => present,
+  path    => '/var/www/html/index.html',
   content => 'Hello World!',
 }
 
+file_line { 'redirect_me':
+  ensure => present,
+  path   => '/etc/nginx/sites-available/default',
+  after  => 'listen 80 default_server;',
+  line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
+}
+
 service { 'nginx':
-  ensure  => running,
-  require => Package['nginx'],
+  ensure     => running,
+  hasrestart => true,
+  require    => Package['nginx'],
+  subscribe  => File_line['redirect_me'],
 }

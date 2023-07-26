@@ -1,20 +1,30 @@
 #!/usr/bin/env bash
-# Commands to install Nginx on Web-Sever-01
-
-# Updating Packages before making Installations
+# Installs, configures, and starts the server
 sudo apt-get update
 sudo apt-get -y install nginx
-
-# Configuring the Uncomplicated Firewall (UFW) to allow incoming traffic for the Nginx HTTP service
 sudo ufw allow 'Nginx HTTP'
+mkdir -p /var/www/html
+chmod -R 755 /var/www
+echo 'Hello World!' > /var/www/html/index.html
+SERVER_CONFIG=\
+"server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
 
-# Creating an index.html page
-echo "Hello World!" | sudo tee /var/www/html/index.html
+	root /var/www/html;
+	index index.html index.htm index.nginx-debian.html;
 
-# Testing Nginx configurations for Syntax errors
-sudo nginx -t
+	server_name _;
 
-# Restarting Nginx
-sudo service nginx start
+	location / {
+		try_files \$uri \$uri/ =404;
+	}
+}"
 
+bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
 
+if [ "$(pgrep -c nginx)" -le 0 ]; then
+	sudo service nginx start
+else
+	sudo service nginx restart
+fi

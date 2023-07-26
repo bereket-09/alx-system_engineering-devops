@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
-# Automating my Tasks using Puppet
+# connect to a server Execute a command
 
-file { '/etc/ssh/ssh_config':
-  ensure  => present,
-content => "
-    # SSH client configuration
-    Host *
-      IdentityFile ~/.ssh/school
-      PasswordAuthentication no
-  ",
+exec { 'echo "PasswordAuthentication no\nIdentityFile ~/.ssh/school" >> /etc/ssh/ssh_config':
+        path    => '/bin/'
 }

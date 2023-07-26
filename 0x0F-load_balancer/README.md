@@ -1,4 +1,9 @@
-# `Load balancer`
+# Load balancer
+
+### Tasks
+0. Double the number of webservers 
+1. Install your load balancer 
+2. Add a custom HTTP header with Puppet 
 
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*UEDws7zUq0N0dN-y3EGe5Q.png)
+

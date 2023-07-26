@@ -1,12 +1,9 @@
-# `Welcome to "Command line for the win!"`
-## Are you ready to put your Linux skills to the ultimate test and prove that you have what it takes to survive these stages? 
+# Command Line For The Win
 
+This project contains solutions to some of the bash command challenges at [cmdchallenge](https://cmdchallenge.com/). See [Solutions](Solutions.md).
 
-![](https://cdn.cloudflare.steamstatic.com/steam/apps/1309610/header.jpg?t=1683818158)
+## Tasks to Complete
 
-#
-## `Background Context`
-- CMD CHALLENGE is a pretty cool game challenging your Bash skills.
-- Everything is done via the command line and the questions are becoming increasingly complicated.
-- Improving your command line skills is a valuable training experience!
-- ### Let's get started and don't forget to show us what you're made of!!!
++ 1. [x] First 九 tasks<br/>**_[0-first_9_tasks.png](0-first_9_tasks.png)_** Shows the completion of the first 9 tasks.
++ 1. [x] Reach חי completed tasks<br/>**_[1-next_9_tasks.png](1-next_9_tasks.png)_** Shows the completion of the next 9 (the first 18) tasks.
++ 2. [x] Reach the perfect cube, 27<br/>**_[2-next_9_tasks.png](2-next_9_tasks.png)_** Shows the completion of the next 9 (the first 27) tasks.
